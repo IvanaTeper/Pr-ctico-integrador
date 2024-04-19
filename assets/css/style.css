@@ -1,0 +1,9 @@
+:root{
+    --bg-color: #8B5D33;
+    --fonts-color: #BBE1C3;
+    --color-sec: #869D7A;
+    --extra-color-1: #94D4DE;
+    --extra-color-2: #91785D;
+    --global-height: 300svh;
+    border: 0;
+}
