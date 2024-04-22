@@ -1,9 +1,88 @@
-:root{
-    --bg-color: #8B5D33;
-    --fonts-color: #BBE1C3;
-    --color-sec: #869D7A;
+:root {
+    --bg-color: #FBF3F2;
+    --fonts-color: #0B1830;
+    --color-sec: #FA991C;
+    --navbar-footer-bgcolor: #1C768F;
+    --global-height: 300svh;
     --extra-color-1: #94D4DE;
     --extra-color-2: #91785D;
-    --global-height: 300svh;
     border: 0;
+    width: inherit;
+
+
+}
+
+.emailform {
+    padding: 1rem;
+    background-color: var(--navbar-footer-bgcolor);
+    color: var(--color-sec);
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+nav {
+    height: 30rem;
+    width: 100%;
+    text-align: left;
+    background-color: var(--navbar-footer-bgcolor);
+    color: var(--fonts-color);
+    background-image: url(../multimedia/images/walking_through_venice.jpeg);
+    backdrop-filter: blur(50px);
+    background-size: cover;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: flex-end;
+}
+
+#hero {
+    padding: 5rem;
+    display: flex;
+    width: 5rem;
+}
+
+body {
+    width: inherit;
+}
+
+.container-fluid {
+    align-self: flex-end;
+}
+
+
+
+
+.tarjetas {
+    padding: 5rem;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+        ". . ."
+        ". . ."
+        ". . .";
+    gap: 1rem;
+    width: inherit;
+    grid-auto-flow: inherit;
+    grid-template: auto;
+}
+
+.tarjetas::after {
+
+    display: block;
+    flex-wrap: wrap;
+
+}
+
+footer {
+    padding-top: 2rem;
+    height: 10rem;
+    width: 100%;
+    background-color: var(--navbar-footer-bgcolor);
+    color: var(--color-sec);
+    text-align: center;
+    align-items: center;
 }
