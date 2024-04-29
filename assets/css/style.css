@@ -18,7 +18,9 @@
     color: var(--color-sec);
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
+
 
 
 
@@ -31,7 +33,8 @@ nav {
     background-image: url(../multimedia/images/walking_through_venice.jpeg);
     backdrop-filter: blur(50px);
     background-size: cover;
-
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -42,7 +45,24 @@ nav {
     padding: 5rem;
     display: flex;
     width: 5rem;
+    text-align: left;
 }
+
+#navbar {
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    padding: 20px;
+
+
+    -ms-flex-align: end;
+    position: relative;
+
+}
+
+#menu-title {
+    color: #0B1830;
+}
+
 
 body {
     width: inherit;
@@ -71,6 +91,23 @@ body {
     align-items: center;
 }
 
+.tarjetas:hover {
+
+    padding: 1rem;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+        ". . ."
+        ". . ."
+        ". . .";
+    gap: 1rem;
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+    align-items: center;
+}
+
 .card {
     margin: 2rem
 }
@@ -81,6 +118,206 @@ body {
     }
 }
 
+.opciones-pitch {
+    background-color: var(--color-sec);
+    height: 20rem;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    display: block;
+    flex-direction: column;
+    align-self: flex-end;
+    padding: 5rem;
+    display: flex;
+    text-align: left;
+}
+
+@keyframes example1 {
+    from {
+        translate: 0rem;
+        font-size: 30px;
+    }
+
+    to {
+        translate: 15rem;
+        font-size: 100px;
+    }
+}
+
+#titulo-opciones {
+    font-weight: 700;
+    color: var(--fonts-color);
+    font-family: Arial, Helvetica, sans-serif;
+    animation-name: example1;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+
+}
+
+#titulo-opciones:hover {
+    color: var(--bg-color);
+}
+
+@keyframes example1b {
+    from {
+        translate: 0rem;
+        font-size: 10px;
+    }
+
+    to {
+        translate: 15rem;
+        font-size: 27px;
+    }
+}
+
+#subtitulo-opciones {
+    font-weight: 50;
+    color: var(--fonts-color);
+    font-family: Arial, Helvetica, sans-serif;
+    animation-name: example1b;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+#subtitulo-opciones:hover {
+    color: var(--bg-color);
+}
+
+.impuestos-pitch {
+    background-color: var(--color-sec);
+    height: 20rem;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    display: block;
+    flex-direction: column;
+    align-self: flex-end;
+    padding: 5rem;
+    display: flex;
+    text-align: right;
+    background-color: var(--bg-color);
+}
+
+@keyframes example2 {
+    from {
+        translate: 0rem;
+        font-size: 30px;
+    }
+
+    to {
+        translate: 3rem;
+        font-size: 90px;
+    }
+}
+
+#titulo-impuestos {
+    font-weight: 700;
+    color: var(--fonts-color);
+    font-family: Arial, Helvetica, sans-serif;
+    animation-name: example2;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-delay: 1.5s;
+
+}
+
+#titulo-impuestos:hover {
+    color: var(--color-sec);
+}
+
+@keyframes example2b {
+    from {
+        translate: 0rem;
+        font-size: 10px;
+    }
+
+    to {
+        translate: 3rem;
+        font-size: 23px;
+    }
+}
+
+#subtitulo-impuestos {
+    font-weight: 50;
+    color: var(--fonts-color);
+    font-family: Arial, Helvetica, sans-serif;
+    animation-name: example2b;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-delay: 1.5s;
+}
+
+#subtitulo-impuestos:hover {
+    color: var(--color-sec);
+}
+
+.formulario-pitch {
+    background-color: var(--fonts-color);
+    height: 20rem;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    display: block;
+    flex-direction: column;
+    align-self: flex-end;
+    padding: 5rem;
+
+    text-align: left;
+
+}
+
+@keyframes example3 {
+    from {
+        translate: 0rem;
+        font-size: 30px;
+    }
+
+    to {
+        translate: 10rem;
+        font-size: 100px;
+    }
+}
+
+#titulo-formulario {
+    font-weight: 700;
+    color: var(--bg-color);
+    font-family: Arial, Helvetica, sans-serif;
+    animation-name: example3;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-delay: 1.5s;
+
+}
+
+#titulo-formulario:hover {
+    color: var(--color-sec);
+}
+
+@keyframes example3b {
+    from {
+        translate: 0rem;
+        font-size: 10px;
+    }
+
+    to {
+        translate: 10rem;
+        font-size: 27px;
+    }
+}
+
+#subtitulo-formulario {
+    font-weight: 50;
+    color: var(--bg-color);
+    font-family: Arial, Helvetica, sans-serif;
+    animation-name: example3b;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-delay: 1.5s;
+}
+
+#subtitulo-fornmulario:hover {
+    color: var(--color-sec);
+}
 
 
 
