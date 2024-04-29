@@ -14,60 +14,34 @@
     <header>
         <div class="emailform">
             <input type="email" id="email" name="email">
-            <h4>Ingrese su e-mail para recibir ofertas</h4>
+            <h6>Ingrese su e-mail para recibir ofertas</h6>
         </div>
-        <div>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light" data-bs-theme="danger" data-usuario="ceci"
-                id="navbar">
-                <div id="hero">
-                    <h1>VIAJES Y PAQUETES TURÍSTICOS 2024</h1>
-                </div>
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#paquetes">DESCUBRE</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#europa">EUROPA</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#america" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    AMÉRICA
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#américadelnorte">AMÉRICA DEL NORTE</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#centroamerica">AMÉRICA CENTRAL</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#americadelsur">AMÉRICA DEL SUR</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#asia" target="_blank">ASIA</a>
-                            </li>
-                            <li class="nav-item">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#oceanía">OCEANÍA</a>
-                            </li>
-                            <a class="nav-link disabled">Contacto: paquetesturisticos@gmail.com</a>
-                            </li>
-                        </ul>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar">
+            <div id="hero">
+                <h1>VIAJES Y PAQUETES TURÍSTICOS 2024</h1>
+            </div>
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#" id="menu-title">Menú</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" href="#">Opciones de viajes</a>
+                        <a class="nav-link" href="#">Calcule los impuestos</a>
+                        <a class="nav-link" href="#">Formulario</a>
                     </div>
                 </div>
-            </nav>
-        </div>
+            </div>
+
+        </nav>
     </header>
     <main>
-        <div class="tarjetas">
+        <div class="tarjetas" id="tarjetass">
             <div class="card" style="width: 20rem; height: 25rem;">
                 <img class="card-img-top" src="./assets/multimedia/images/chiapas.jpg" height="180px" alt="AMÉRICA">
                 <div class="card-body">
@@ -114,6 +88,25 @@
                 </div>
             </div>
         </div>
+        <div>
+            <div class="opciones-pitch">
+                <hero id="titulo-opciones">OPCIONES DE VIAJE</hero>
+                <p id="subtitulo-opciones">Consulte paquetes turísticos y medios de transporte</p>
+
+            </div>
+            <div class="impuestos-pitch">
+                <hero id="titulo-impuestos">CALCULO DE IMPUESTOS</hero>
+                <p id="subtitulo-impuestos">Calcule los impuestos antes de viajar</p>
+
+            </div>
+            <div class="formulario-pitch">
+                <hero id="titulo-formulario">CONTACTO</hero>
+                <p id="subtitulo-formulario">Póngase en contacto con nosotros</p>
+
+
+            </div>
+        </div>
+
 
 
     </main>
