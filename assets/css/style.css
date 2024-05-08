@@ -19,7 +19,9 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+
 }
+
 
 
 
@@ -112,14 +114,20 @@ body {
     margin: 2rem
 }
 
-@media (width <=30em) {
+@media (width <=500px) {
     .tarjetas {
         display: block;
+
     }
 }
 
-.opciones-pitch {
+.container-div-opciones {
     background-color: var(--color-sec);
+    display: flex;
+}
+
+.opciones-pitch {
+
     height: 20rem;
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
@@ -139,8 +147,8 @@ body {
     }
 
     to {
-        translate: 15rem;
-        font-size: 100px;
+        translate: 2rem;
+        font-size: 45px;
     }
 }
 
@@ -159,6 +167,16 @@ body {
     color: var(--bg-color);
 }
 
+.imagen-opciones {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+    display: flex;
+    align-items: flex-end
+}
+
 @keyframes example1b {
     from {
         translate: 0rem;
@@ -166,8 +184,8 @@ body {
     }
 
     to {
-        translate: 15rem;
-        font-size: 27px;
+        translate: 2rem;
+        font-size: 23px;
     }
 }
 
@@ -184,8 +202,12 @@ body {
     color: var(--bg-color);
 }
 
+.container-div-impuestos {
+    background-color: var(--bg-color);
+    display: flex;
+}
+
 .impuestos-pitch {
-    background-color: var(--color-sec);
     height: 20rem;
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
@@ -196,7 +218,7 @@ body {
     padding: 5rem;
     display: flex;
     text-align: right;
-    background-color: var(--bg-color);
+
 }
 
 @keyframes example2 {
@@ -207,7 +229,7 @@ body {
 
     to {
         translate: 3rem;
-        font-size: 90px;
+        font-size: 45px;
     }
 }
 
@@ -234,7 +256,7 @@ body {
     }
 
     to {
-        translate: 3rem;
+        translate: 2.5rem;
         font-size: 23px;
     }
 }
@@ -253,8 +275,13 @@ body {
     color: var(--color-sec);
 }
 
-.formulario-pitch {
+.container-div-formulario {
     background-color: var(--fonts-color);
+    display: flex;
+}
+
+.formulario-pitch {
+
     height: 20rem;
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
@@ -263,7 +290,7 @@ body {
     flex-direction: column;
     align-self: flex-end;
     padding: 5rem;
-
+    display: flex;
     text-align: left;
 
 }
@@ -275,15 +302,14 @@ body {
     }
 
     to {
-        translate: 10rem;
-        font-size: 100px;
+        translate: 3rem;
+        font-size: 45px;
     }
 }
 
 #titulo-formulario {
-    font-weight: 700;
+    font-weight: 500;
     color: var(--bg-color);
-    text-decoration: none;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     animation-name: example3;
@@ -304,8 +330,8 @@ body {
     }
 
     to {
-        translate: 10rem;
-        font-size: 27px;
+        translate: 3rem;
+        font-size: 23px;
     }
 }
 
@@ -319,8 +345,71 @@ body {
     animation-delay: 1.5s;
 }
 
-#subtitulo-fornmulario:hover {
+#subtitulo-formulario:hover {
     color: var(--color-sec);
+}
+
+@media (width <=500px) {
+
+    .container-div-opciones {
+        display: block;
+        flex-direction: column;
+    }
+
+    .opciones-pitch {}
+
+    #titulo-opciones {
+        display: block;
+        width: inherit;
+        flex-wrap: wrap;
+
+    }
+
+    #subtitulo-opciones {
+        display: block;
+        width: fit-content;
+        height: fit-content;
+        max-width: fit-content;
+    }
+
+    .container-div-impuestos {
+        display: block;
+        flex-direction: column;
+    }
+
+    .impuestos-pitch {}
+
+    #titulo-impuestos {
+        display: block;
+        width: inherit;
+    }
+
+    #subtitulo-impuestos {
+        display: block;
+        width: fit-content;
+        height: fit-content;
+        max-width: fit-content;
+
+    }
+
+    .container-div-formulario {
+        display: block;
+        flex-direction: column;
+    }
+
+    .formulario-pitch {}
+
+    #titulo-formulario {
+        display: block;
+        width: inherit;
+    }
+
+    #subtitulo-formulario {
+        display: block;
+        width: fit-content;
+        height: fit-content;
+    }
+
 }
 
 
