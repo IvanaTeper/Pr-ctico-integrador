@@ -23,21 +23,27 @@
 
 }
 
+.nav {
+    background-color: #0B1830;
+}
 
+h6 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
 
 
 .container-fluid {
 
-    padding: 10px;
-    height: auto;
+    padding: 15px;
+    height: 4rem;
     width: 100%;
-    text-align: left;
+
     color: var(--fonts-color);
     background-color: #0B1830;
-    background-size: cover;
+    background-size: contain;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 30px;
+    font-size: 18px;
 
     flex-direction: column;
 
@@ -56,19 +62,37 @@
     padding: 5rem;
     font-weight: 700;
     display: flex;
+    gap: 10px;
     width: 5rem;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #0B1830;
     align-items: left;
+    font-size: 50px;
+
+}
+
+@keyframes heroanimation {
+    from {
+        color: #97ffff;
+        translate: -10rem;
+    }
+
+    to {
+        translate: 0.6rem;
+        color: var(--fonts-color);
+    }
+}
+
+#hero:hover {
+    animation-name: heroanimation;
+    animation-duration: 3s;
+
 
 }
 
 
 
 
-#menu-title {
-    color: #0B1830;
-}
 
 
 body {
@@ -141,12 +165,12 @@ body {
 @keyframes example1 {
     from {
         translate: 0rem;
-        font-size: 30px;
+        font-size: 35px;
     }
 
     to {
-        translate: 2rem;
-        font-size: 45px;
+        translate: 1rem;
+        font-size: 40px;
     }
 }
 
@@ -181,7 +205,7 @@ body {
 
 
 .imagen-opciones:hover {
-    transform: scale(1.4);
+    transform: scale(1.2);
 
 }
 
@@ -189,12 +213,12 @@ body {
 @keyframes example1b {
     from {
         translate: 0rem;
-        font-size: 10px;
+        font-size: 15px;
     }
 
     to {
-        translate: 2rem;
-        font-size: 23px;
+        translate: 1rem;
+        font-size: 20px;
     }
 }
 
@@ -233,12 +257,12 @@ body {
 @keyframes example2 {
     from {
         translate: 0rem;
-        font-size: 30px;
+        font-size: 35px;
     }
 
     to {
-        translate: 3rem;
-        font-size: 45px;
+        translate: 1rem;
+        font-size: 40px;
     }
 }
 
@@ -261,12 +285,12 @@ body {
 @keyframes example2b {
     from {
         translate: 0rem;
-        font-size: 10px;
+        font-size: 15px;
     }
 
     to {
-        translate: 2.5rem;
-        font-size: 23px;
+        translate: 1rem;
+        font-size: 20px;
     }
 }
 
@@ -307,12 +331,12 @@ body {
 @keyframes example3 {
     from {
         translate: 0rem;
-        font-size: 30px;
+        font-size: 35px;
     }
 
     to {
-        translate: 3rem;
-        font-size: 45px;
+        translate: 1rem;
+        font-size: 40px;
     }
 }
 
@@ -335,12 +359,12 @@ body {
 @keyframes example3b {
     from {
         translate: 0rem;
-        font-size: 10px;
+        font-size: 15px;
     }
 
     to {
-        translate: 3rem;
-        font-size: 23px;
+        translate: 1rem;
+        font-size: 20px;
     }
 }
 
@@ -435,7 +459,7 @@ body {
     -webkit-line-clamp: 1;
     -webkit-box-orient: horizontal;
 
-    transition: transform 35s linear;
+    transition: transform 35s ease-out;
 
 
 
@@ -455,6 +479,45 @@ body {
 
 /* Add a class to the element to trigger the animation */
 
+
+
+.container-emailformmovimiento {
+    padding: 110px;
+    background-color: #1C768F;
+    color: var(--color-sec);
+    display: grid;
+    align-items: center;
+
+    background-color: #1C768F;
+
+
+}
+
+
+
+.emailformmovimiento {
+    padding: 70px;
+    font-size: 30px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    -webkit-box-sizing: content-box;
+    color: var(--fonts-color);
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    background-color: #FA991C;
+    height: 15rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    border-radius: 5px;
+
+
+}
+
+.emailformmovimiento:hover {
+    color: var(--bg-color);
+}
 
 
 
