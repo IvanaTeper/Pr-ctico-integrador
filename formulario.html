@@ -43,72 +43,130 @@
     </header>
     <main>
         <br>
-        
-        <img src="https://iquasar.com.pe/wp-content/uploads/banner-contacto.jpg"
-        class="img-fluid" alt="1rem">
-        <br>
-        <br>
+        <div class="container">
+            <img src="https://iquasar.com.pe/wp-content/uploads/banner-contacto.jpg"
+            class="img-fluid" alt="1rem">
+            <br>
+            <br>
 
-        <section class="d-flex justify-content-center">
-            <div class="card col-sm-6 p-3">
-                <div class="mb-3">
-                    <h2>Contacto</h2>
-                </div>
-                <div>
-                    <h6>Envianos un mensaje y estaremos en contacto a la brevedad</h6>
-                </div>
-                <br>
-                <div class="input-group mb-3">
-                    <label class="input-group-text" for="inputGroupSelect01">Opciones</label>
-                    <select class="form-select" id="inputGroupSelect01">
-                      <option selected>Elegí un tema</option>
-                      <option value="1">Consulta de promociones</option>
-                      <option value="2">Tengo una reserva</option>
-                      <option value="3">Sugerencias</option>
-                      <option value="4">Reclamos</option>
-                    </select>
-                  </div>
-                  <br>
-                <div class="mb-3">
-                    <form action="">
-                        <div class="mb-3">
-                            <label for="nombre" class="form-label">Nombre</label>
-                            <input type="nombre" class="form-control" id="nombre" placeholder="Nombre">
-                        </div>
+            <section class="d-flex justify-content-center">
+                <div class="card col-sm-6 p-3">
+                    <div class="mb-3">
+                        <h2>Contacto</h2>
+                    </div>
+                    <div>
+                        <h6>Envianos un mensaje y estaremos en contacto a la brevedad</h6>
+                    </div>
+                    <br>
+                    <div class="input-group mb-3">
+                        <label class="input-group-text" for="inputGroupSelect01">Opciones</label>
+                        <select class="form-select" id="inputGroupSelect01">
+                        <option selected>Elegí un tema</option>
+                        <option value="1">Consulta de promociones</option>
+                        <option value="2">Tengo una reserva</option>
+                        <option value="3">Sugerencias</option>
+                        <option value="4">Reclamos</option>
+                        </select>
+                    </div>
+                    <br>
+                        <form class="row g-3 needs-validation" novalidate>
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre</label>
+                                <input type="nombre" class="form-control" id="nombre" placeholder="Nombre" required>
+                                <div class="valid-feedback">
+                                    Campo completo ok
+                                </div>
+                                <div class="invalid-feedback">
+                                    Es necesario completar antes de enviar
+                                </div>
+                            </div>
 
-                        <div class="mb-3">
-                            <label for="correo electrónico" class="form-label">Correo electrónico</label>
-                            <input type="correo electrónico" class="form-control" id="correo electrónico" placeholder="ejemplo@gmail.com">
-                        </div>
+                            <div class="mb-3">
+                                <label for="apellido" class="form-label">Apellido</label>
+                                <input type="apellido" class="form-control" id="apellido" placeholder="Apellido" required>
+                                <div class="valid-feedback">
+                                    Campo completo ok
+                                </div>
+                                <div class="invalid-feedback">
+                                    Es necesario completar antes de enviar
+                                </div>
+                            </div>
 
-                        <div class="mb-3">
-                            <label for="mensaje" class="form-label">Mensaje</label>
-                            <textarea class="form-control" id="mensaje" placeholder="Hola, me gustaría recibir más información sobre paquetes turísticos. Gracias!" rows="3"></textarea>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
-                              Aceptar términos y condiciones
-                            </label>
-                        </div>
-                        <br>
-                        <br>
-                        <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
-                        <label class="btn btn-primary" for="btn-check">Enviar mensaje</label>
+                            <div class="mb-3">
+                                <label for="correo electrónico" class="form-label">Correo electrónico</label>
+                                <input type="correo electrónico" class="form-control" id="correo electrónico" placeholder="ejemplo@gmail.com" required>
+                                <div class="valid-feedback">
+                                    Campo completo ok
+                                </div>
+                                <div class="invalid-feedback">
+                                    Es necesario completar antes de enviar
+                                </div>
+                            </div>
 
-                    </form>
+                            <div class="mb-3">
+                                <label for="mensaje" class="form-label">Mensaje</label>
+                                <textarea class="form-control" id="mensaje" placeholder="Hola, me gustaría recibir más información sobre paquetes turísticos. Gracias!" rows="3" required></textarea>
+                                <div class="valid-feedback">
+                                    Campo completo ok
+                                </div>
+                                <div class="invalid-feedback">
+                                    Es necesario completar antes de enviar
+                                </div>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="terms" required>
+                                <label class="form-check-label" for="terms">Acepto los términos y condiciones
+                                </label>
+                                </div>
+                                <div class="valid-feedback">
+                                    Campo completo ok
+                                </div>
+                                <div class="invalid-feedback">
+                                    Es necesario aceptar los términos y condiciones
+                                </div>
+                            <br>
+                            <br>
+                            <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+                        </form>
+                    </div>
                 </div>
             </section>
-    </main>
-
-    <footer>
-        <div>
-            <hr class="line" style="justify-content: center;">
-            <p>Web design by Grupo 1 Fullstack Python Comisión 24150 ® Codo a Codo 2024</p>
         </div>
-    </footer>
-    </body>
+
+        <script>
+            // Deshabilitamos el envío de formularios si hay campo no válidos (función autoinvocada):
+        (() => {
+            'use strict'
+        
+            // Aplicamos al formulario definido en fila 72 la siguiente sentencia, la usamos para formularios que necesitan validación:
+            
+            const forms = document.querySelectorAll('.needs-validation')
+        
+            // Iteramos sobre los formularios que obtuvimos en el paso anterior:
+
+            Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+                }
+        
+                form.classList.add('was-validated')
+            }, false)
+            })
+        })() 
+        </script>
+    </main>
+</body>
+
+<footer>
+    <div>
+        <hr class="line" style="justify-content: center;">
+        <p>Web design by Grupo 1 Fullstack Python Comisión 24150 ® Codo a Codo 2024</p>
+    </div>
+</footer>
+
+
 <script src="./assets/js/index.js"></script>
 
 </html>
-
