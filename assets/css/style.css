@@ -665,21 +665,6 @@ footer {
         align-items: flex-start
     }
 
-    .emailformmovimiento {
-        display: block;
-        font-size: 20px;
-        height: auto;
-    }
-
-    .banner-container {
-        height: 50px;
-        display: flex;
-        flex-direction: row;
-        -webkit-line-clamp: 1;
-        -webkit-box-orient: horizontal;
-
-    }
-}
 
 @media (width <=500px) {
     .footer-text {
@@ -692,18 +677,4 @@ footer {
         align-items: flex-start
     }
 
-    .emailformmovimiento {
-        display: block;
-        font-size: 20px;
-        height: auto;
-    }
-
-    .banner-container {
-        height: 50px;
-        display: flex;
-        flex-direction: row;
-        -webkit-line-clamp: 1;
-        -webkit-box-orient: horizontal;
-
-    }
 }
