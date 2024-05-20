@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/opciones.css">
+    <title>✈️Opciones de Viajes🌎</title>
+</head>
+<body>
+    <header>
+        <div class="video-container">
+            <video autoplay loop muted>
+                <source src="./assets/multimedia/videos/aeropuerto.mp4">
+            </video>
+        </div>
+        <div class="marquee-container">
+            <p class="marquee-text">Mira lo que tenemos para ofrecerte</p>
+        </div>
+    </header>
+    <main>
+        <div class="grid-container">
+            <div class="grid-item" onclick="toggleTexto('texto1')">
+                <img src="./assets/multimedia/imágenes/montañas.jpg" alt="montañas">
+                <div id="texto1" class="texto-oculto">
+                    <ul>
+                        <li>  Pasajes aéreos y movilidad por tierra  </li>
+                        <li>  Excursiones, trekking, cabalgatas y MTB  </li>
+                        <li>  Las mejores vistas de los Alpes Suizos  </li>
+                    </ul>
+                </div>
+                <h3>Montaña de aventuras</h3>
+            </div>
+            <div class="grid-item" onclick="toggleTexto('texto2')">
+                <img src="./assets/multimedia/imágenes/playa.jpg" alt="playa">
+                <div id="texto2" class="texto-oculto">
+                    <ul>
+                        <li>  Servicio en playa  </li>
+                        <li>  Buseo y snorkel  </li>
+                        <li>  Fiesta de luna y arena  </li>
+                        <li>  Todos los días una nueva playa  </li>
+                    </ul>
+                </div>
+                <h3>Playas relax</h3>
+            </div>
+            <div class="grid-item" onclick="toggleTexto('texto3')">
+                <img src="./assets/multimedia/imágenes/crucero.jpg" alt="crucero">
+                <div id="texto3" class="texto-oculto">
+                    <ul>
+                        <li>  Una semana de crucero  </li>
+                        <li>  Espacios para cada integrante de la famila  </li>
+                        <li>  Actividades lúdicas  </li>
+                        <li>  Taller de artes y expresión  </li>
+                        <li>  Cine programado  </li>
+                        <li>  Gimnasio  </li>
+                        <li>  Bar 24Hs.  </li>
+                    </ul>
+                </div>
+                <h3>Sobre el mar</h3>
+            </div>
+            <div class="grid-item" onclick="toggleTexto('texto4')">
+                <img src="./assets/multimedia/imágenes/museos.jpeg" alt="museos">
+                <div id="texto4" class="texto-oculto">
+                    <ul>
+                        <li>  Louvre  </li>
+                        <li>  Vaticanos  </li>
+                        <li>  Británico  </li>
+                        <li>  del Prado  </li>
+                        <li>  Rijksmuseum  </li>
+                        <li>  Van Gogh  </li>
+                        <li>  Galería Uffizi  </li>
+                        <li>  Acrópolis  </li>
+                        <li>  d´Orsay</li>
+                    </ul>
+                </div>
+                <h3>El reino de las artes</h3>
+            </div>
+            <div class="grid-item" onclick="toggleTexto('texto5')">
+                <img src="./assets/multimedia/imágenes/disney.jpeg" alt="disney">
+                <div id="texto5" class="texto-oculto">
+                    <ul>
+                        <li>  Magic Kingdom  </li>
+                        <li>  EPCOT  </li>
+                        <li>  Animal Kingdom Theme Park  </li>
+                        <li>  Hollywood Studios  </li>
+                        <li>  Disney Springs  </li>
+                        <li>  Paseo de compras  </li>
+                        <li>  Restaurantes exclusivos  </li>
+                    </ul>
+                </div>
+                <h3>Familia y diversión</h3>
+            </div>
+            <div class="grid-item" onclick="toggleTexto('texto6')">
+                <img src="./assets/multimedia/imágenes/murallaChina.jpg" alt="murallaChina">
+                <div id="texto6" class="texto-oculto">
+                    <ul>
+                        <li>  Muralla China  </li>
+                        <li>  Taj Mahal  </li>
+                        <li>  Gyeongbokgung  </li>
+                        <li>  Pabellón dorado  </li>
+                        <li>  Castillo Osaka  </li>
+                        <li>  Kiyomizu-dera  </li>
+                    </ul>
+                </div>
+                <h3>Rutas del misterio</h3>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footer-text">
+            <p class="line">____________________________________________________________________</p>
+            <p>Web design by Grupo 1 Fullstack Python Comisión 24150 ® Codo a Codo 2024</p>
+        </div>
+    </footer>
+    <script src="./assets/js/opciones.js"></script>
+</body>
+</html>
