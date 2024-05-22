@@ -522,6 +522,77 @@ body {
 
 }
 
+
+@media (width <=700px) {
+
+    .container-div-opciones {
+        display: block;
+        flex-direction: column;
+    }
+
+    .opciones-pitch {}
+
+    #titulo-opciones {
+        display: block;
+        width: inherit;
+        flex-wrap: wrap;
+
+    }
+
+    #subtitulo-opciones {
+        display: block;
+        width: fit-content;
+        height: fit-content;
+        max-width: fit-content;
+    }
+
+    .container-div-impuestos {
+        display: block;
+        flex-direction: column;
+    }
+
+    .impuestos-pitch {}
+
+    #titulo-impuestos {
+        display: block;
+        width: inherit;
+    }
+
+    #subtitulo-impuestos {
+        display: block;
+        width: fit-content;
+        height: fit-content;
+        max-width: fit-content;
+
+    }
+
+    .container-div-formulario {
+        display: block;
+        flex-direction: column;
+    }
+
+    .formulario-pitch {}
+
+    #titulo-formulario {
+        display: block;
+        width: inherit;
+    }
+
+    #subtitulo-formulario {
+        display: block;
+        width: fit-content;
+        height: fit-content;
+    }
+
+}
+
+.banner-container {
+    background-image: linear-gradient(#FBF3F2, #94D4DE);
+    height: 3rem;
+    width: 100%;
+
+}
+
 .banner-container {
     background-image: linear-gradient(#FBF3F2, #94D4DE);
     height: 3rem;
