@@ -148,6 +148,26 @@ video {
 
 }
 
+@media (width <=700px) {
+    .navbar-list {
+        display: block;
+    }
+
+    .nav-container {
+        height: 15rem;
+    }
+}
+
+@media (width <=500px) {
+    .navbar-list {
+        display: block;
+    }
+
+    .nav-container {
+        height: 20rem;
+    }
+}
+
 
 
 
