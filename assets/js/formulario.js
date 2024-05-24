@@ -4,7 +4,7 @@
             
                 // Aplicamos al formulario definido en fila 72 la siguiente sentencia, la usamos para formularios que necesitan validación:
                 
-                const form = document.querySelectorAll('.needs-validation')
+                const forms = document.querySelectorAll('.needs-validation')
             
                 // Iteramos sobre los formularios que obtuvimos en el paso anterior:
     
