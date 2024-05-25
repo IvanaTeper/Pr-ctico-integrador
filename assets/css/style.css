@@ -129,12 +129,12 @@ h6 {
 
 
 
-#container-hero {
+#container-heroe {
     background-image: url(../multimedia/images/walkingvenice.jpeg);
     background-size: cover;
 }
 
-#hero {
+#heroe {
 
     padding: 5rem;
     font-weight: 700;
@@ -148,7 +148,7 @@ h6 {
 
 }
 
-@keyframes heroanimation {
+@keyframes heroeanimation {
     from {
         color: #97ffff;
         translate: -10rem;
@@ -160,8 +160,8 @@ h6 {
     }
 }
 
-#hero:hover {
-    animation-name: heroanimation;
+#heroe:hover {
+    animation-name: heroeanimation;
     animation-duration: 3s;
 
 
@@ -208,7 +208,7 @@ body {
     margin: 2rem
 }
 
-#imagenes-tarjetas {
+.card-img-top {
     column-width: 25rem;
 
 }
@@ -551,6 +551,7 @@ body {
     background-image: linear-gradient(#FBF3F2, #94D4DE);
     height: 3rem;
     width: 100%;
+    white-space: nowrap;
 
 }
 
@@ -592,7 +593,7 @@ body {
 .container-emailformmovimiento {
     padding: 110px;
     background-color: #1C768F;
-    color: var(--color-sec);
+    color: none;
     display: grid;
     align-items: center;
     margin: 0%;
