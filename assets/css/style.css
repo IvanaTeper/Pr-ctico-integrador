@@ -160,7 +160,7 @@ h6 {
     }
 }
 
-#heroe:hover {
+.heroe:hover {
     animation-name: heroeanimation;
     animation-duration: 3s;
 
