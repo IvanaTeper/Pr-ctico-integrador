@@ -270,6 +270,21 @@ main {
     .grid-container {
         display: block;
         gap: 5rem;
+        padding: 5rem;
+    }
+
+    .grid-item {
+
+        height: 15rem;
+        width: 15rem;
+
+
+    }
+
+    .grid-item img {
+        width: 10rem;
+        height: 10rem;
+
     }
 }
 
