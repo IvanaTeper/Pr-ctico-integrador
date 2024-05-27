@@ -1,4 +1,4 @@
-:root {
+root {
     --bg-color: #FBF3F2;
     --fonts-color: #0B1830;
     --color-sec: #FA991C;
@@ -16,6 +16,8 @@
 header {
     height: 30rem
 }
+
+
 
 
 
@@ -248,7 +250,7 @@ main {
 }
 
 
-@media (width <=1024px) {
+@media (width <=1280px) {
 
     .grid-container {
         display: grid;
@@ -259,7 +261,7 @@ main {
     }
 }
 
-@media (width <=700px) {
+@media (width <=900px) {
     .grid-container {
         display: block;
         gap: 5rem;
@@ -287,6 +289,34 @@ main {
 
     }
 }
+
+@media (width <=370px) {
+    .grid-container {
+        display: block;
+        gap: 1rem;
+        padding: 3.5rem;
+    }
+
+    .grid-item {
+
+        height: 10rem;
+        width: 10rem;
+
+
+    }
+
+    .grid-item img {
+        width: 8rem;
+        height: 8rem;
+
+    }
+
+    .grid-item h3 {
+        font-size: 10px;
+    }
+}
+
+
 
 
 .texto-oculto {
