@@ -248,6 +248,17 @@ main {
 }
 
 
+@media (width <=1024px) {
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            ". . "
+            ". . ";
+    }
+}
+
 @media (width <=700px) {
     .grid-container {
         display: block;
