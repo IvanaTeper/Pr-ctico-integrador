@@ -172,18 +172,19 @@ video {
 
 
 main {
-
     background-color: #94D4DE;
     color: #0B1830;
     margin: 0;
-    padding: 9rem 0rem 0rem;
+    padding-top: 10rem;
+    padding-bottom: 20rem;
     height: inherit;
     justify-content: center;
     align-items: center;
 }
 
 .grid-container {
-    padding: 10rem;
+
+
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
@@ -192,11 +193,14 @@ main {
     grid-gap: 50px;
     grid-area: auto;
     position: relative;
-    gap: 5rem;
+    padding-left: 10rem;
+    padding-right: 5rem;
+
     align-items: center;
     width: auto;
     height: auto;
     box-sizing: border-box;
+    align-content: center;
 
 }
 
